@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Daraz</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="shortcut icon"
+      href="darazlogo-removebg-preview.png"
+      type="image/x-icon"
+    />
+    <script
+      src="https://kit.fontawesome.com/0342ab83c6.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section class="navbar-background">
+      <div class="top-nav">
+        <p class="top-nav-para">Become a seller</p>
+        <p class="top-nav-para">Payments & Recharge</p>
+        <div class="tooltip">
+          <p class="top-nav-para">Help & support</p>
+          <div class="items">
+            <br />
+            <p class="tooltip-nav">
+              <i class="fa-solid fa-handshake-angle"></i>Help Center
+            </p>
+            <p class="tooltip-nav">
+              <i class="fa-brands fa-rocketchat"></i>Chat with us
+            </p>
+            <p class="tooltip-nav">
+              <i class="fa-brands fa-first-order"></i>Order
+            </p>
+            <p class="tooltip-nav">
+              <i class="fa-solid fa-truck-fast"></i>Shipping and Delivery
+            </p>
+            <p class="tooltip-nav">
+              <i class="fa-regular fa-credit-card"></i>Payments
+            </p>
+            <p class="tooltip-nav">
+              <i class="fa-solid fa-dollar-sign"></i>Returns & Refunds
+            </p>
+          </div>
+        </div>
+        <p class="top-nav-para">Daraz Logistics Partner</p>
+      </div>
+      <div class="bottom-nav">
+        <img src="daraz-logo.png" alt="daraz-logo" class="daraz-logo" />
+        <div class="input-search">
+          <input
+            type="text"
+            placeholder="Search in daraz"
+            class="input-bottom-nav"
+          />
+          <i
+            class="fa-solid fa-magnifying-glass"
+            style="color: #ff0000"
+            id="search"
+          ></i>
+        </div>
+        <main class="login-nav-below">
+          <div class="login-all">
+            <a class="login" href="https://member.daraz.com.np/user/login">
+              <i class="fa-regular fa-user"></i>
+              <p>Login</p>
+            </a>
+          </div>
+          <span style="color: white">|</span>
+          <p class="signup-para">sign up</p>
+          <div class="world-language">
+            <i class="fa-solid fa-globe"></i>
+            <h2 class="lan">EN</h2>
+            <i class="fa-solid fa-chevron-down"></i>
+          </div>
+          <div class="cart-hover">
+            <div class="cart">
+              <i class="fa-solid fa-cart-shopping" style="color: white"></i>
+            </div>
+          </div>
+        </main>
+        <div class="menu-bar" onclick="show()">
+          <i class="fa-solid fa-bars" style="color: #ffffff"></i>
+        </div>
+      </div>
+      <section class="all-menu-bar">
+        <i
+          class="fa-solid fa-xmark"
+          style="color: #ffffff; cursor: pointer"
+          onclick="hide()"
+        ></i>
+        <div class="login-all">
+          <a class="login" href="https://member.daraz.com.np/user/login">
+            <i class="fa-regular fa-user"></i>
+            <p>Login</p>
+          </a>
+        </div>
+        <p class="signup-para">sign up</p>
+        <div class="world-language">
+          <i class="fa-solid fa-globe"></i>
+          <h2 class="lan">EN</h2>
+          <i class="fa-solid fa-chevron-down"></i>
+        </div>
+        <div class="cart-hover">
+          <div class="cart">
+            <i class="fa-solid fa-cart-shopping" style="color: white"></i>
+          </div>
+        </div>
+      </section>
+    </section>
+    <div class="below-container">
+      <div class="all-below">
+        <section class="below-nav">
+          <div class="left-below-nav">
+            <div class="tooltip-below-nav">
+              <p class="tooltip-btn-first">comming soon</p>
+              <p>Women's and Fashion</p>
+            </div>
+            <div class="tooltip-below-nav">
+              <p class="tooltip-btn-first">comming soon</p>
+              <p>Health & Beauty</p>
+            </div>
+            <div class="tooltip-below-nav">
+              <p class="tooltip-btn-first">comming soon</p>
+              <p>Electronic Devices</p>
+            </div>
+            <div class="tooltip-below-nav">
+              <p class="tooltip-btn-first">comming soon</p>
+              <p>Babies & Toys</p>
+            </div>
+          </div>
+        </section>
+        <section class="slider-main">
+          <main>
+            <div class="btn">
+              <button onclick="prev()" class="left-btn">
+                <i class="fa-solid fa-chevron-left" style="color: white"></i>
+              </button>
+              <button onclick="next()" class="left-btn">
+                <i class="fa-solid fa-chevron-right" style="color: white"></i>
+              </button>
+            </div>
+            <img class="slide" src="daraz-img.jpg" alt="" />
+            <img class="slide" src="darazimg2.jpg" alt="" />
+            <img class="slide" src="darazimg3.jpg" alt="" />
+          </main>
+        </section>
+      </div>
+
+      <!--category section -->
+
+      <div class="container">
+        <h3>Categories</h3>
+        <div class="grid">
+          <div class="category">
+            <img src="daiper.png" alt="Disposable Diapers" />
+            <p>Disposable Diapers</p>
+          </div>
+          <div class="category">
+            <img src="watch.png" alt="Smartwatches" />
+            <p>Smartwatches</p>
+          </div>
+          <div class="category">
+            <img src="bath.png" alt="Bath & Body Accessories" />
+            <p>Bath & Body Accessories</p>
+          </div>
+          <div class="category">
+            <img src="door.png" alt="Decorative Door Stops" />
+            <p>Decorative Door Stops</p>
+          </div>
+          <div class="category">
+            <img src="layer.png" alt="Base Layers" />
+            <p>Base Layers</p>
+          </div>
+          <div class="category">
+            <img src="trimmer.png" alt="Trimmers Groomers &..." />
+            <p>Trimmers Groomers &...</p>
+          </div>
+          <div class="category">
+            <img src="cover.png" alt="Covers" />
+            <p>Covers</p>
+          </div>
+          <div class="category">
+            <img src="pan.png" alt="Cookware Sets" />
+            <p>Cookware Sets</p>
+          </div>
+          <div class="category">
+            <img src="humidifier.png" alt="Humidifiers" />
+            <p>Humidifiers</p>
+          </div>
+          <div class="category">
+            <img src="herb.png" alt="Herbs & Spices" />
+            <p>Herbs & Spices</p>
+          </div>
+          <div class="category">
+            <img src="bag.png" alt="Laptop Backpacks" />
+            <p>Laptop Backpacks</p>
+          </div>
+          <div class="category">
+            <img src="art.png" alt="Art Pads, Diaries & Folios" />
+            <p>Art Pads, Diaries & Folios</p>
+          </div>
+          <div class="category">
+            <img src="mouse.png" alt="mouse" />
+            <p>Mouse</p>
+          </div>
+          <div class="category">
+            <img src="speaker.png" alt="Portable Speakers" />
+            <p>Portable Speakers</p>
+          </div>
+          <div class="category">
+            <img src="peeler.png" alt="Graters, Peelers & Slicers" />
+            <p>Graters, Peelers & Slicers</p>
+          </div>
+          <div class="category">
+            <img src="pot.png" alt="Pots, Planters & Urns" />
+            <p>Pots, Planters & Urns</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Footer section -->
+    <main class="footer-background-change">
+      <div class="btn-footer-center">
+        <button class="footer-btn">Load More</button>
+      </div>
+      <div class="footer-section">
+        <section class="footer-first">
+          <h1 class="footer-care">Customer Care</h1>
+          <br />
+          <ul class="footer-care-ul">
+            <li>Help Center</li>
+            <li>How to buy</li>
+            <li>Return & Refund</li>
+            <li>Contact Us</li>
+          </ul>
+          <br /><br /><br />
+          <h1 class="footer-care">Earn with Daraz</h1>
+          <br />
+          <ul class="footer-care-ul">
+            <li>Daraz University</li>
+            <li>Sell on Daraz</li>
+            <li>Code of Conduct</li>
+          </ul>
+        </section>
+        <section class="footer-second">
+          <h1 class="footer-care">Daraz</h1>
+          <br />
+          <ul class="footer-care-ul">
+            <li>About Daraz</li>
+            <li>Careers</li>
+            <li>Daraz Blog</li>
+            <li>Terms & Condition</li>
+            <li>Privacy Policy</li>
+            <li>Digital Payments</li>
+            <li>Daraz Customer University</li>
+            <li>Daraz Affiliate Program</li>
+            <li>Review & Win</li>
+            <li>Meet the winners</li>
+          </ul>
+        </section>
+        <section class="footer-third">
+          <h1 class="footer-care">Daraz International</h1>
+          <main class="flag-with-name-grid">
+            <div class="flag-with-name">
+              <img src="pakistan.png" alt="" class="flag" />
+              Pakistan
+            </div>
+            <div class="flag-with-name">
+              <img src="bangladesh.jpg" alt="" class="flag" />
+              Bangladesh
+            </div>
+            <div class="flag-with-name">
+              <img src="srilanka.png" alt="" class="flag" />
+              Sri Lanka
+            </div>
+            <div class="flag-with-name">
+              <img src="myanmar.png" alt="" class="flag" />
+              Myanmar
+            </div>
+            <div class="flag-with-name">
+              <img src="nepal.png" alt="" class="flag" />
+              Nepal
+            </div>
+          </main>
+          <br />
+          <h1 class="footer-care">Payments Method</h1>
+          <p>comming soon</p>
+        </section>
+        <section class="footer-offer">
+          <img
+            src="Screenshot_2024-06-21_113441-removebg-preview.png"
+            alt=""
+            class="qrcode"
+          />
+          <h1 class="footer-care">Follow Us</h1>
+          <div class="icon">
+            <i class="fa-brands fa-facebook" style="color: #005eff"></i>
+            <i class="fa-brands fa-square-instagram" style="color: #ff00ae"></i>
+            <i class="fa-brands fa-youtube" style="color: #ff0000"></i>
+            <i class="fa-solid fa-globe" style="color: #ff0000"></i>
+          </div>
+        </section>
+      </div>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
